@@ -27,15 +27,15 @@ update_repos(){
 
 install_cinnamon(){
 	echo "Installing Desktop Environment..."
-	sudo apt install cinnamon &> /dev/null
+	sudo apt install cinnamon -y&> /dev/null
 }
 install_gnome_tweaks(){
 	echo "Installing Gnome Tweaks..."
-	sudo apt install gnome-tweaks &> /dev/null
+	sudo apt install gnome-tweaks -y&> /dev/null
 }
 install_gnome_shell(){
 	echo "Installing Gnome Shell..."
-	sudo apt install gnome-shell-extension-manager &> /dev/null
+	sudo apt install gnome-shell-extension-manager -y&> /dev/null
 }
 check_python(){
 	echo "Checking Python..."
@@ -45,17 +45,17 @@ check_python(){
 	else
 		echo "Python is not installed"
 		echo "Installing Python..."
-		sudo apt install python3 &> /dev/null
+		sudo apt install python3 -y&> /dev/null
 	fi
 }
 install_pip(){
 	echo "Installing pip..."
-	sudo apt install python3-pip &> /dev/null
-	sudo apt install pipx &> /dev/null
+	sudo apt install python3-pip -y&> /dev/null
+	sudo apt install pipx -y&> /dev/null
 }
 install_git(){
 	echo "Installing Git..."
-	sudo apt install git &> /dev/null
+	sudo apt install git -y&> /dev/null
 }
 # install_vscode(){
 # 	echo "Installing Visual Studio Code..."
@@ -68,15 +68,15 @@ install_effect(){
 }
 install_figlet(){
 	echo "Installing figlet..."
-	sudo apt install figlet &> /dev/null
+	sudo apt install figlet -y&> /dev/null
 }
 install_lolcat(){
 	echo "Installing lolcat..."
-	sudo apt install lolcat &> /dev/null
+	sudo apt install lolcat -y&> /dev/null
 }
 install_essential(){
 	echo "Installing other dependancies..."
-	sudo apt install curl wget &> /dev/null
+	sudo apt install curl wget -y&> /dev/null
 }
 check_internet
 update_repos
