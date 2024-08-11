@@ -123,7 +123,7 @@ install_phi(){
 	echo "Installing hacking software..."
 	wget -P $dir https://github.com/aunchagaonkar/installdeps/releases/download/init/eDEX-UI-Linux-x86_64.AppImage &> /dev/null
 	chmod +x $dir/eDEX-UI-Linux-x86_64.AppImage 
-	echo "alias netninja='$dir/eDEX-UI-Linux-x86_64.AppImage'" >> ~/.bashrc
+	echo "alias netninja=\"\$dir/eDEX-UI-Linux-x86_64.AppImage\"" >> ~/.bashrc
 	update_progress 1
 }
 install_done(){
